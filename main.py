@@ -1,4 +1,4 @@
-import pygame
+import pygame 
 import sys
 import random
 
@@ -71,7 +71,7 @@ while True:
             pygame.quit()
             sys.exit()
 
-    # Check if the snake has eaten the food
+    
     if snake[0][0] == food[0] and snake[0][1] == food[1]:
         food = [random.randrange(1, (width//snake_block)) * snake_block,
                 random.randrange(1, (height//snake_block)) * snake_block]
